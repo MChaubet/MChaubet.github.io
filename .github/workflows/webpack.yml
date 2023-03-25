@@ -33,5 +33,4 @@ jobs:
       with:
         # Github access token token used to deploy on gh_pages. You can find it on Github.
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
-        deploy_branch: deploy
         angular_dist_build_folder: target/classes/static
