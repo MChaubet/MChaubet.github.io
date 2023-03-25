@@ -1,0 +1,37 @@
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Build
+      run: |
+        npm install
+        npm run webapp:build:prod
+    - name: Angular Deploy gh-pages Actions
+      # You may pin to the exact commit or the version.
+      # uses: AhsanAyaz/angular-deploy-gh-pages-actions@2272ef32f364bc80d8680ee03d8e58f126156c31
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
+      with:
+        # Github access token token used to deploy on gh_pages. You can find it on Github.
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+        deploy_branch: deploy
+        angular_dist_build_folder: target/classes/static
