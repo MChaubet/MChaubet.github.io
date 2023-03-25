@@ -232,9 +232,38 @@ angular-cli removes postcss-rtl processed inline css, processed rules must be ad
   }
 }
 
-jhi-our-scroll {
-  overflow-x: hidden;
-  display: block;
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 0 none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2c2c2;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #878787;
+}
+::-webkit-scrollbar-track {
+  background: #5c5c5c;
+  border: 0 none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #5c5c5c;
+}
+::-webkit-scrollbar-track:active {
+  background: #5c5c5c;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 .title-h1 {
@@ -272,6 +301,7 @@ jhi-our-scroll {
   padding: 15px 20px;
   position: relative;
   width: fit-content;
+  cursor: pointer;
 
   &:after {
     bottom: 0;
