@@ -1,18 +1,7 @@
 .feedback-container {
   height: 100%;
   position: relative;
-}
-
-.swiper {
-  width: 600px;
-}
-
-.swiper-container {
-  height: inherit;
-}
-
-.swiper-wrapper {
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .swiper-slide {
@@ -24,7 +13,7 @@
 }
 
 .slide {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-inline: auto;

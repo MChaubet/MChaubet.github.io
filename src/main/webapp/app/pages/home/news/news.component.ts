@@ -16,7 +16,7 @@ export class NewsComponent implements OnInit {
       spaceBetween: 10,
       centeredSlides: true,
       grabCursor: true,
-      loop: false,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

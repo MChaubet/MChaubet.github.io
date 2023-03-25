@@ -20,7 +20,6 @@ export class FeedbackComponent implements OnInit {
         el: '.swiper-pagination.swiper-feedback',
         clickable: true,
       },
-      loop: true,
       cardsEffect: {
         slideShadows: false,
         transformOrigin: 'center',

@@ -20,7 +20,7 @@ import { MainComponent } from './layouts/main/main.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { ErrorComponent } from './layouts/error/error.component';
 import { HomeComponent } from './pages/home/home.component';
-import { OurScrollComponent } from './pages/home/our-scroll/our-scroll.component';
+import { WorkComponent } from './pages/home/work/work.component';
 import { FeedbackComponent } from './pages/home/feedback/feedback.component';
 import { NewsComponent } from './pages/home/news/news.component';
 
@@ -37,7 +37,7 @@ import { NewsComponent } from './pages/home/news/news.component';
     TranslationModule,
   ],
   providers: [Title, { provide: LOCALE_ID, useValue: 'fr' }, { provide: NgbDateAdapter, useClass: NgbDateDayjsAdapter }],
-  declarations: [MainComponent, ErrorComponent, FooterComponent, HomeComponent, OurScrollComponent, FeedbackComponent, NewsComponent],
+  declarations: [MainComponent, ErrorComponent, FooterComponent, HomeComponent, WorkComponent, FeedbackComponent, NewsComponent],
   bootstrap: [MainComponent],
 })
 export class AppModule {
