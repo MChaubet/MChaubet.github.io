@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757259680264,
+  "timestamp": 1757261257207,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/85.5a9a1bdaa4716857.js",
+        "/85.42b6520314cacc69.js",
         "/favicon.ico",
         "/index.html",
         "/main.605376e7cb42a633.js",
         "/manifest.webapp",
         "/polyfills.283d8c0836b74add.js",
-        "/runtime.f2f7bbff67b992c0.js",
+        "/runtime.739ca18f7767090c.js",
         "/scripts.25289daa4ec69a49.js",
         "/styles.0ba6185e7e2f7449.css"
       ],
@@ -2157,7 +2157,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/85.5a9a1bdaa4716857.js": "b8d2f1230b766047c4410157109d22426647b34e",
+    "/85.42b6520314cacc69.js": "93fd97f42a44ee29a39e27451705415ed274c47a",
     "/advantages-needs.0cd31feb7fe80828.jpg": "4c9e001543117b9c1d302474c5d418e443dd8416",
     "/content/css/loading.css": "04bb505c3ccc00f8583d26afd65361a5f5bff005",
     "/content/css/swiper-bundle.min.css": "cf397e3bd4d30ecd7d14e73dd3e4a9130455d191",
@@ -4279,11 +4279,11 @@
     "/fa-v4compatibility.924588dc97e66b08.ttf": "e688e02012b9e5269a09809b0d666edc87527cb2",
     "/fa-v4compatibility.ee06c6f803f379bb.woff2": "951ded71094a52e249ac52799fac7cbb68368270",
     "/favicon.ico": "69547cd4a95b59ac7e6818b6eb82befa061d0c16",
-    "/index.html": "2a125d54ecc6a34c4fa85ee37675e50aecbdd05e",
+    "/index.html": "b816b5116d08ba9a2e0d2c3c313eec44fa1509df",
     "/main.605376e7cb42a633.js": "42033fdeb96138319eaad8545266533aa1a0c340",
     "/manifest.webapp": "24dfd502f07995e522c2488dacaa93618df1b9aa",
     "/polyfills.283d8c0836b74add.js": "fcac198d2b4cc20467f85e2077c8fc8742ac610f",
-    "/runtime.f2f7bbff67b992c0.js": "1b0e3fab521a85153be2bcc394163207e25ca7a2",
+    "/runtime.739ca18f7767090c.js": "284a2d3cd0549ebc63b426aa0380c6db63308428",
     "/scripts.25289daa4ec69a49.js": "dfa6326174eac794915c6269faa54b9d190f0521",
     "/styles.0ba6185e7e2f7449.css": "28908909f819f2baf76387b25b6578e2fd5247b0"
   },
