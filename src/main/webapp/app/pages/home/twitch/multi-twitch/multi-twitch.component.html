@@ -1,0 +1,27 @@
+<div class="min-vh-100 d-flex flex-column gap-2 p-2 bg-black c" style="color: white">
+  <div class="d-flex align-items-center gap-2 flex-row-reverse">
+    <h2 class="m-0">Twitchies</h2>
+    <button class="btn btn-secondary" (click)="onAddStream()">➕ Ajouter</button>
+
+    <label for="experimental-sound" class="m-0">Son expérimental</label>
+    <input id="experimental-sound" type="checkbox" [(ngModel)]="experimentalSound" />
+  </div>
+
+  <div id="stream-focus"></div>
+
+  <div id="streams" class="flex-grow-1 gap-2" [ngClass]="{ 'focus-mode': focusedIndex !== null }">
+    <jhi-twitch-stream
+      *ngFor="let s of streams; let i = index"
+      [ngClass]="{ 'stream-focus': focusedIndex === i }"
+      [channel]="s.channel"
+      [volume]="s.volume"
+      [focused]="focusedIndex === i"
+      [focusedScreen]="focusedIndex"
+      (volumeChange)="onVolumeChange(i, $event)"
+      (focusStream)="onFocusStream(i)"
+      (focusSound)="onFocusSound(i)"
+      (remove)="onRemoveStream(i)"
+    >
+    </jhi-twitch-stream>
+  </div>
+</div>

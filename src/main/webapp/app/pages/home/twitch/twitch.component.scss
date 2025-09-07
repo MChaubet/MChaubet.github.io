@@ -1,0 +1,119 @@
+//.twitch-container {
+//  height: 100vh;
+//  width: 100vw;
+//  display: flex;
+//  flex-direction: column;
+//
+//  .twitch-container-title {
+//    border: solid 1px black;
+//  }
+//
+//  .twitch-stream {
+//    flex-grow: 1;
+//    display: flex;
+//    flex-direction: row;
+//
+//    border: solid 1px black;
+//
+//    .twitch-stream-focus {
+//      background-color: #0d6efd;
+//      flex-grow: 1;
+//    }
+//    .twitch-streams-list {
+//      background-color: #212529;
+//      overflow-y: auto;
+//    }
+//  }
+//}
+//
+
+body {
+  margin: 0;
+  background: #18181b;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: #9147ff;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #772ce8;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #ff4c4c;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.focus-btn {
+  background: #8d8d8d;
+  margin-left: auto;
+}
+.focus-btn.active {
+  background: #009e77;
+}
+
+#streams {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+.stream {
+  background: #242428;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30%;
+  min-width: 300px;
+  min-height: 200px;
+  transition: all 0.3s ease;
+}
+
+.stream .player {
+  flex: 1;
+  min-height: 0;
+}
+.stream .controls {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Mode focus */
+#streams.focus-mode {
+  flex-direction: column;
+}
+#streams.focus-mode .stream.focused {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  z-index: 10;
+}
+#streams.focus-mode .stream.mini {
+  max-height: 200px;
+  overflow: hidden;
+  margin-left: 76%;
+}

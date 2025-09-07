@@ -1,0 +1,20 @@
+<!--<div class="twitch-container">-->
+<!--  <div class="twitch-container-title">Twitchies</div>-->
+
+<!--  <div class="twitch-stream">-->
+<!--    <div class="twitch-stream-focus">-->
+<!--      <div>StreamFocus</div>-->
+<!--    </div>-->
+<!--    <div class="twitch-stream-list">-->
+<!--      <div>Stream1</div>-->
+<!--      <div>Stream2</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div style="display: flex; align-items: center; gap: 10px; padding: 8px">
+  <h2 style="margin: 0">Twitchies</h2>
+  <button (click)="onAddStreamClick()">➕ Ajouter</button>
+</div>
+
+<div #streamsContainer id="streams"></div>

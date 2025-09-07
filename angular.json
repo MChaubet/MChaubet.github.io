@@ -41,7 +41,7 @@
               "src/main/webapp/content/fontawesome/css/all.min.css",
               "src/main/webapp/content/css/swiper-bundle.min.css"
             ],
-            "scripts": ["src/main/webapp/content/js/swiper-bundle.min.js"]
+            "scripts": ["src/main/webapp/content/js/swiper-bundle.min.js", "src/main/webapp/content/js/twitch_v1.js"]
           },
           "configurations": {
             "production": {

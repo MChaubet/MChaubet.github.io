@@ -1,0 +1,45 @@
+.stream {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .player {
+    background: black;
+    flex-grow: 1;
+  }
+}
+
+.stream .controls {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.focus-btn {
+  background-color: #8d8d8d;
+
+  &:hover {
+    background: #626262;
+  }
+  .active {
+    background: #009e77;
+  }
+}
+
+.btn {
+  padding: 0;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-range {
+  max-width: 80px;
+}

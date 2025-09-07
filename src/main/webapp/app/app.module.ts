@@ -23,6 +23,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { WorkComponent } from './pages/home/work/work.component';
 import { FeedbackComponent } from './pages/home/feedback/feedback.component';
 import { NewsComponent } from './pages/home/news/news.component';
+import { TwitchComponent } from './pages/home/twitch/twitch.component';
+import { TwitchStreamComponent } from './pages/home/twitch/twitch-stream/twitch-stream.component';
+import { MultiTwitchComponent } from './pages/home/twitch/multi-twitch/multi-twitch.component';
 
 @NgModule({
   imports: [
@@ -37,7 +40,18 @@ import { NewsComponent } from './pages/home/news/news.component';
     TranslationModule,
   ],
   providers: [Title, { provide: LOCALE_ID, useValue: 'fr' }, { provide: NgbDateAdapter, useClass: NgbDateDayjsAdapter }],
-  declarations: [MainComponent, ErrorComponent, FooterComponent, HomeComponent, WorkComponent, FeedbackComponent, NewsComponent],
+  declarations: [
+    MainComponent,
+    ErrorComponent,
+    FooterComponent,
+    HomeComponent,
+    WorkComponent,
+    FeedbackComponent,
+    NewsComponent,
+    TwitchComponent,
+    TwitchStreamComponent,
+    MultiTwitchComponent,
+  ],
   bootstrap: [MainComponent],
 })
 export class AppModule {
